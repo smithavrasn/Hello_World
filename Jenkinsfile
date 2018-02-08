@@ -16,5 +16,10 @@ pipeline {
         sleep(time: 1, unit: 'MINUTES')
       }
     }
+    stage('Approve ?') {
+      steps {
+        input 'Approve'
+      }
+    }
   }
 }
